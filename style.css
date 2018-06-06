@@ -1,0 +1,52 @@
+iframe {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+	padding-left:15%;
+	padding-right:15%;
+	padding-top: 20px;
+	background: linear-gradient(rgba(20,20,20,0.7), 
+  	rgba(20, 20, 20, 0.4)), url("bg.png") no-repeat center center fixed;
+  	background
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 100vh;
+}
+
+#title {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 25px;
+    -webkit-animation-duration: 1.5s;
+    color: white;
+    text-align: center;
+}
+
+#description {
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.text-main {
+	padding: 10px;
+	font-size: 20px;
+	background-color: #aaaaaa;
+	text-align: center;
+}
+
+.border-rounded {
+	border-style: solid;
+	border color: #aaaaaa;
+	border-radius: 25px;
+	box-shadow: 5px 10px black;
+	margin-top: 25px;
+}
+
+
