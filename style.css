@@ -4,6 +4,7 @@ iframe {
     margin-right: auto;
 }
 
+
 #main {
 	padding-left:15%;
 	padding-right:15%;
@@ -14,7 +15,7 @@ iframe {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height: 100vh;
+	height: 105vh;
 }
 
 #title {
@@ -48,5 +49,30 @@ iframe {
 	box-shadow: 5px 10px black;
 	margin-top: 25px;
 }
+
+.text-wrap-left, #name-label, #number-label, #email-label {
+	text-align: right;
+}
+
+#survey-form-descriptions {
+	padding-top: 10px;
+}
+
+			
+#survey-form {
+	text-align: left;
+	padding: 10px;
+}
+
+
+#name, #number, #email {
+	margin-bottom: 10px;
+}
+
+#radio, #dropdown {
+	margin-bottom: 20px;
+}
+
+
 
 

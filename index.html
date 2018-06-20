@@ -7,31 +7,68 @@
 <link rel="stylesheet" type="text/css" href="animate.css">
 <link rel="stylesheet" type="text/css" href="aos.css">
 
+
 <meta name="viewport" content="width=device-width">
 
 	<title>Super Mario</title>
 </head>
 <body>
 	<div id="main">
-		<div id="container-fluid px-0">
-			<div class="col-sm-12 text-main border-rounded" data-aos="fade-up" data-aos-duration="800">
+		<div class="container-fluid border-rounded text-main" >
+			<div class="col-sm-12">
 				<h1 id="title">Haptic VR Survey Form</h1>
-					<p id="description" class="text-main">Watch the video below and let us know what you think about the Haptic suit by filling out the survey!</p>
+					<p id="description">Watch the video below and let us know what you think about the Haptic suit by filling out the survey!</p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/9bIOexDMLYc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<form id="survey-form-descriptions">
+						<p id="name-label">*First name:</p>
+						<p id="name-label">*Last Name</p>
+						<p id="number-label">*Age</p>
+						<p id="email-label">*Email</p>
+						<p class="text-wrap-left">*Would you recommend this video to a friend?</p>
+						<p class="text-wrap-left">*What genre game would this benefit most?</p>
+						<p class="text-wrap-left">*How much would you pay?</p>
+						<p class="text-wrap-left">Additional comments?</p>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<form id="survey-form" >
+						<input id="name" type="text" name="name" placeholder="First Name" required>
+						<br>
+						<input id="name" type="text" name="name" placeholder="Last Name" required>
+						<br>
+						<input id="number" type="number" name="Age" min="10" max="100" placeholder="Age" required>
+						<br>
+						<input id="email" type="text" name="Email" placeholder="Email" required> <br>
+						<input id="radio" type="radio" name="name" required>Yes
+						<input id="radio" type="radio" name="name" required>No <br>
+						<select id="dropdown" name="Genres">
+							<option value="Action">Action</option>
+							<option value="Sports">Sports</option>
+							<option value="Horror">Horror</option>
+							<option value="FPS">FPS</option>
+ 						</select>
+ 						<br>
+ 						<select id="dropdown" name="Price">
+							<option value="< $100"><$100</option>
+							<option value=">$100">>$100</option>
+							<option value="Sky is the limit">Sky is the limit</option>
+ 						</select>
+ 						<textarea rows="2" cols="50"></textarea>
+ 						<input type="submit" name="submit">
+					</form>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </body>
 
-<script src="aos.js"></script>
-
-<script type="text/javascript">
-	AOS.init();
-</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
 
 </html>
